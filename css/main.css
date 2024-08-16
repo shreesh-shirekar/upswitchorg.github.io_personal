@@ -3,27 +3,6 @@ html {
   margin: 0;
 }
 
-@-webkit-keyframes color-change {
-  0% {
-    color: white;
-  }
-  20% {
-    color: #3df2e0;
-  }
-  40% {
-    color: #0fb2f2;
-  }
-  60% {
-    color: #085abc;
-  }
-  80% {
-    color: #0fb2f2;
-  }
-  100% {
-    color: white;
-  }
-}
-
 @keyframes color-change {
   0% {
     color: white;
@@ -44,7 +23,6 @@ html {
     color: white;
   }
 }
-
 nav img.logo {
   padding: 2em;
   width: 7em;
@@ -54,22 +32,12 @@ nav img.logo {
 .main {
   height: 100%;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: fixed;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-
 .main h1 {
   text-align: center;
   vertical-align: middle;
@@ -78,10 +46,8 @@ nav img.logo {
   font-weight: 900;
   font-style: italic;
   font-size: 7rem;
-  -webkit-animation: color-change 10s infinite;
-          animation: color-change 10s infinite;
+  animation: color-change 10s infinite;
 }
-
 .main h4 {
   color: white;
   font-size: 1rem;
@@ -94,7 +60,6 @@ nav img.logo {
 .container {
   position: absolute;
 }
-
 .container h4 {
   color: white;
   font-family: Noto Sans, sans-serif;
@@ -102,23 +67,14 @@ nav img.logo {
 }
 
 .footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: fixed;
   top: 67%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
   width: 100%;
 }
-
 .footer img {
   width: 2em;
   padding: 0.5em;
@@ -132,7 +88,6 @@ nav img.logo {
     font-size: 0.8em;
   }
 }
-
 @media only screen and (max-width: 690px) {
   .main h1 {
     font-size: 4.5em;
@@ -141,7 +96,6 @@ nav img.logo {
     font-size: 0.6em;
   }
 }
-
 @media only screen and (max-width: 630px) {
   .main h1 {
     font-size: 4em;
@@ -150,7 +104,6 @@ nav img.logo {
     font-size: 0.6em;
   }
 }
-
 @media only screen and (max-width: 400px) {
   .main h1 {
     font-size: 3em;
@@ -158,5 +111,4 @@ nav img.logo {
   .main h4 {
     font-size: 0.6em;
   }
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
